@@ -10,8 +10,8 @@ PS2='> '
 PS3='> '
 PS5='+ '
 
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=2000
+HISTFILESIZE=4000
 tac ~/.bash_history | awk '!x[$0]++' | tac | sponge ~/.bash_history
 
 alias ls='ls --color=auto'
