@@ -27,8 +27,10 @@ Plugin 'VundleVim/Vundle.vim'
 " different version somewhere else.
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
-Plugin 'SuperTab'
-Plugin 'Syntastic'
+Plugin 'bling/vim-airline'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -46,17 +48,35 @@ filetype plugin indent on    " required
 
 syntax on
 
-set cursorline
-set shiftwidth=4
-set clipboard=unnamed
-set tabstop=4
+" linenumbers & cursorline
 set number
+set cursorline
+
+" tabs, indent & backspace
+set shiftwidth=4
+set tabstop=4
 set expandtab
-set nowritebackup
-set noswapfile
-set nobackup
+
+" search
+set incsearch
 set hlsearch
 set ignorecase
 set smartcase
 
+" interface
+set laststatus=2
+
+" backup & swap
+set nowritebackup
+set noswapfile
+set nobackup
+
+" other stuff
+set autochdir
+set clipboard=unnamed
+
+" key map
 noremap <CR> :nohlsearch<CR>
+
+" vim-airline
+let g:airline#extensions#tabline#enabled=1
