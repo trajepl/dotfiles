@@ -29,6 +29,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
+Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 " All of your Plugins must be added before the following line
@@ -80,3 +81,7 @@ noremap <CR> :nohlsearch<CR>
 
 " vim-airline
 let g:airline#extensions#tabline#enabled=1
+
+" ctrlp.vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
