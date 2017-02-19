@@ -2,3 +2,11 @@ set show-all-if-unmodified on
 
 "\e[A": history-search-backward
 "\e[B": history-search-forward
+
+"\C-dW": kill-word
+"\C-dL": kill-line
+"\C-dw": backward-kill-word
+"\C-dl": backward-kill-line
+
+"\C-f": forward-word
+"\C-b": backward-word
